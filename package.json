@@ -1,5 +1,5 @@
 {
-  "name": "discord-getting-started",
+  "name": "ctf-bot",
   "private": true,
   "version": "1.0.0",
   "description": "Discord example app",
@@ -9,11 +9,11 @@
     "node": ">=18.x"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node --env-file=.env app.js",
     "register": "node commands.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon --env-file=.env app.js"
   },
-  "author": "Shay DeWael",
+  "author": "Nesfan",
   "license": "MIT",
   "dependencies": {
     "discord-interactions": "^4.0.0",
